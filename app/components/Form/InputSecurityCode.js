@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Label from './Label.js';
+import Label from './Label';
+import SecurityCode from './SecurityCode';
 
 export default class InputSecurityCode extends Component {
 	render() {
@@ -11,7 +12,8 @@ export default class InputSecurityCode extends Component {
 	                    <input type="text" name="scode" className="form-control" required />
 	                </div>
 	                <div className="col-md-6">
-	                    <span className="scode" id="scode"></span>
+	                  
+	                    <SecurityCode />
 	    	            <img src="http://www.myiconfinder.com/uploads/iconsets/20-20-a8b2cd367864cc15d5a376893517ec81-arrow.png"
 	          		         id="refresh"
 	                	     style={{opacity: '0.6'}} />
