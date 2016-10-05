@@ -1,27 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Form from './components/Form';
+import Notice from './components/Notice';
 
-class App extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
+class FormWrap extends React.Component {
 
   render() {
     return (
-    	<div>
-    		<h1>hello, world</h1>
+    	<div className="row">
+            <Form />
+            <Notice />
     	</div>
-    );
+    )
   }
 }
-//stateless
-ReactDOM.render(<App />,document.getElementById('app'));
 
-const MyComponent = () =>(
-			<h1>hello~~ world!</h1>
-)
+ReactDOM.render(
+    <FormWrap />,
+    document.getElementById('form')
+  );
 
-ReactDOM.render(<MyComponent />,document.getElementById('justSayHello'));
+
+// //stateless
+// const MyComponent = () =>(
+// 			<h1>hello~~ world!</h1>
+// )
+
+// ReactDOM.render(<MyComponent />,document.getElementById('justSayHello'));
 
 // https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md
