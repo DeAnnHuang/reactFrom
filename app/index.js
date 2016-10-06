@@ -7,10 +7,12 @@ class FormWrap extends React.Component {
 
   render() {
     return (
-    	<div className="row">
-            <Form />
-            <Notice />
-    	</div>
+	    <div className="container">
+	    	<div className="row">
+	            <Form />
+	            <Notice />
+	        </div>
+        </div>
     )
   }
 }
@@ -23,10 +25,12 @@ ReactDOM.render(
 
 // //stateless
 // const MyComponent = () =>(
-// 			<h1>hello~~ world!</h1>
+// <h1>hello~~ world!</h1>
 // )
 
 // ReactDOM.render(<MyComponent />,document.getElementById('justSayHello'));
 
 // https://github.com/kdchang/reactjs101/blob/master/Ch03/react-jsx-introduction.md
-// SecurityCode!
+// Button(check Vality) && input 感覺可以再精簡？
+// 
+
